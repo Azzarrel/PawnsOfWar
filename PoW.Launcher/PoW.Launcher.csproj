@@ -15,4 +15,13 @@
     <ProjectReference Include="..\PoW.Essentials\PoW.Essentials.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Page Update="View\HeaderControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ButtonBarControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
 </Project>

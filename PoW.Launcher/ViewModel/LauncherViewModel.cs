@@ -1,9 +1,8 @@
-﻿using PoW.Essentials.Base;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using PoW.Core;
+using PoW.Essentials.Base;
+using PoW.Launcher.Model;
+using System.Collections.ObjectModel;
 using System.Windows.Input;
-using PoW.Core;
 
 namespace PoW.Launcher.ViewModel
 {
@@ -22,10 +21,21 @@ namespace PoW.Launcher.ViewModel
       set { Set(value); }
     }
 
+    public ObservableCollection<HistoryGroupModel> HistoryGroups
+    {
+      get { return Get<ObservableCollection<HistoryGroupModel>>(); }
+      set { Set(value); }
+    }
+
     public LauncherViewModel()
     {
       CurrentControl = 1;
       StartingPos = 650;
+
+      HistoryGroups = new ObservableCollection<HistoryGroupModel>();
+      HistoryGroups.Add(new HistoryGroupModel() { Title = "Heute"});
+      HistoryGroups.Add(new HistoryGroupModel() { Title = "Gestern", Entrys = new ObservableCollection<HistoryCharacterModel>() { new HistoryCharacterModel() { Title = "Title 1" } } });
+
       CreateCommands();
     }
 
