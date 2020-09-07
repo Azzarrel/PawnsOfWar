@@ -1,9 +1,9 @@
-﻿using PoW.Essentials.Base;
+﻿using PoW.Essentials;
 using System.Collections.ObjectModel;
 
 namespace PoW.Launcher.Model
 {
-	class HistoryGroupModel : NotifyBase
+	public class HistoryGroupModel : NotifyBase
 	{
 		public HistoryGroupModel()
 		{

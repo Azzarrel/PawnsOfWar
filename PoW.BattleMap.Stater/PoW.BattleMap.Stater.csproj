@@ -7,22 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Model\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\PoW.BattleMap\PoW.BattleMap.csproj" />
+    <ProjectReference Include="..\PoW.Core.Interfaces\PoW.Core.Interfaces.csproj" />
     <ProjectReference Include="..\PoW.Core\PoW.Core.csproj" />
     <ProjectReference Include="..\PoW.Essentials\PoW.Essentials.csproj" />
-    <ProjectReference Include="..\PoW.Utility\PoW.Utility.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Update="View\HeaderControl.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="View\ButtonBarControl.xaml">
-      <SubType>Designer</SubType>
-    </Page>
   </ItemGroup>
 
 </Project>

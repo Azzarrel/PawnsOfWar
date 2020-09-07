@@ -1,8 +1,8 @@
-﻿using PoW.Essentials.Base;
+﻿using PoW.Essentials;
 
 namespace PoW.Launcher.Model
 {
-	class HistoryCharacterModel : NotifyBase
+	public class HistoryCharacterModel : NotifyBase
 	{
 
 		public string Title

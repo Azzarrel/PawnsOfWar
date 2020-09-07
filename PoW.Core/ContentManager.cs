@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PoW.Essentials.Base
+namespace PoW.Core
 {
-  class ViewModelBase : NotifyBase
+  public class ContentManager
   {
+    //Quasi der ControlLoader
   }
 }

@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Controls;
 
-namespace PoW.Essentials.Base
+namespace PoW.Essentials
 {
   public abstract class ControlBase : UserControl, INotifyPropertyChanged
   {

@@ -1,12 +1,16 @@
-﻿using PoW.Core;
-using PoW.Essentials.Base;
-using PoW.Launcher.Model;
+using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Text;
 using System.Windows.Input;
+using PoW.Core;
+using PoW.Essentials;
+using PoW.Launcher.Model;
+using PoW.Utility;
 
 namespace PoW.Launcher.ViewModel
 {
-  class LauncherViewModel : NotifyBase
+  public class LauncherViewModel : NotifyBase
   {
 
     public double StartingPos
